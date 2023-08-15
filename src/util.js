@@ -1,7 +1,5 @@
 import Values from "values.js";
-import { createEventDispatcher, onMount } from 'svelte';
-import { toasts, ToastContainer } from "svelte-toasts";
-import { writable } from "svelte/store";
+import { toasts } from "svelte-toasts";
 
 
 export function addColor(color) {

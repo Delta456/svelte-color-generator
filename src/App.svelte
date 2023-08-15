@@ -1,11 +1,6 @@
 <script>
-  import Values from "values.js";
-  import { writable } from "svelte/store";
-  import { createEventDispatcher, onMount } from 'svelte';
-  import { toasts, ToastContainer } from "svelte-toasts";
   import Form  from './Form.svelte'
   import ColorList from "./ColorList.svelte";
-  import { addColor } from './util.js';
 
   let color = '#f15025';  
 </script>
@@ -34,17 +29,5 @@ body {
 }
 p {
   margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  font-family: var(--headingFont);
-  font-weight: 400;
-  line-height: 1;
-  text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
 }
 </style>

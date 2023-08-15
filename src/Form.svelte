@@ -1,6 +1,4 @@
 <script>
-    import { addColor } from './util.js';
-
     export let color;
     function handleSubmit(event) {
       event.preventDefault();
@@ -48,6 +46,16 @@ input[type='text'] {
 
 .container>* {
   margin-right: 2rem;
+}
+
+h3 {
+  margin: 0;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+
 }
 
 </style>
