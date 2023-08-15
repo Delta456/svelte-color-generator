@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "nanoid": "^4.0.2",
+    "svelte-toasts": "^1.1.2",
     "values.js": "^2.1.1"
   }
 }
