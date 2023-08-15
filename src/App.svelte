@@ -5,25 +5,46 @@
   import { toasts, ToastContainer } from "svelte-toasts";
   import Form  from './Form.svelte'
   import ColorList from "./ColorList.svelte";
+  import { addColor } from './util.js';
 
-    const colors = writable(new Values('#f15025').all(10));
-    let dispatch = createEventDispatcher()
-    export function addColor(color) {
-      dispatch('color-picker', )
-      try {
-        let newColors = new Values(color).all(10)
-        console.log(newColors);
-        colors.set(newColors);
-      } catch (error) {
-        console.log(error.message);
-        toasts.error(error.message)
-      }
-      onMount(() => {
-      });
-    };
+  let color = '#f15025';  
 </script>
 
-<main>
-  <Form addColor={addColor} />
-  <ToastContainer placement='top-center' />
+<main class="container">
+  <Form bind:color={color}/>
+  <ColorList bind:color={color}/>
 </main>
+
+
+<style>
+  .container {
+  padding: 2rem;
+  display: grid;
+  row-gap: 1.5rem;
+  height: 160px;
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--textColor);
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: var(--headingFont);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+}
+</style>
