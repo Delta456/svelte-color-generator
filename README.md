@@ -1,2 +1,3 @@
-# svelte-color-generator
-Color Generator in Svelte
+# Color Generator in Svelte
+
+
