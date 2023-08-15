@@ -21,4 +21,4 @@ npm run dev
 
 ## License
 
-Licnsed under [MIT](./LICENSE).
+Licensed under [MIT](./LICENSE).
