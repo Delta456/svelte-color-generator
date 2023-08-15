@@ -14,10 +14,10 @@ npm run dev
 
 ## Screenshots
 
-||| |
-|:-:|:-:|:-:|
-![img](./img/color_generator.png) | ![img](./img/color_generaor_picker.png)
- | ![img](./img/color_generator_clipboard.png) | ![img](./img/color_generator_2.png)
+|                                             |                                     |     |
+| :-----------------------------------------: | :---------------------------------: | :-: |
+|  ![img](./img/color_generator_picker.png)   |  ![img](./img/color_generator.png)  |
+| ![img](./img/color_generator_clipboard.png) | ![img](./img/color_generator_2.png) |
 
 ## License
 
