@@ -3,10 +3,12 @@
   import ColorList from "./ColorList.svelte";
 </script>
 
+
 <main>
   <Form />
   <ColorList />
 </main>
+
 
 <style>
   main {
