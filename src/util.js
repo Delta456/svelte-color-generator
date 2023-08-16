@@ -3,7 +3,7 @@ import { toasts } from "svelte-toasts";
 
 export function addColor(color) {
   try {
-    let colors = new Values(color).all(10);
+    const colors = new Values(color).all(10);
     console.log("addColor:", {colors});
     return colors;
   } catch (error) {
