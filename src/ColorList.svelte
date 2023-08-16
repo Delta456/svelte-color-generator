@@ -1,15 +1,12 @@
 <script>
-  import { color } from "./stores.js";
-  import { addColor, saveToClipboard } from "./util.js";
+  import { color, colors } from "./stores.js";
+  import { saveToClipboard } from "./util.js";
   import { ToastContainer, FlatToast } from "svelte-toasts";
-
-  $: colors = addColor($color);
-  console.log("color list:", colors);
 </script>
 
 
 <section class="colors">
-  {#each colors as c, index}
+  {#each $colors as c, index}
     <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
     <article
       class="color-light color"
