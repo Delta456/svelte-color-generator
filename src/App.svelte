@@ -3,13 +3,13 @@
   import ColorList from "./ColorList.svelte";
 </script>
 
-<main class="container">
+<main>
   <Form />
   <ColorList />
 </main>
 
 <style>
-  .container {
+  main {
     padding: 2rem;
     display: grid;
     row-gap: 1.5rem;
