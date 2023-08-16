@@ -1,13 +1,11 @@
 <script>
   import Form from "./Form.svelte";
   import ColorList from "./ColorList.svelte";
-
-  let color = "#f15025";
 </script>
 
 <main class="container">
-  <Form bind:color />
-  <ColorList bind:color />
+  <Form />
+  <ColorList />
 </main>
 
 <style>

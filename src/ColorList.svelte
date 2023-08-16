@@ -1,10 +1,10 @@
 <script>
+  import { color } from "./stores.js";
   import { addColor, saveToClipboard } from "./util.js";
-  export let color;
   import { ToastContainer, FlatToast } from "svelte-toasts";
 
-  $: colors = addColor(color);
   console.log("color list: ", colors);
+  $: colors = addColor($color);
 </script>
 
 <section class="colors">
