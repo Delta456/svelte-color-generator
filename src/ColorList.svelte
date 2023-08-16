@@ -3,8 +3,8 @@
   import { addColor, saveToClipboard } from "./util.js";
   import { ToastContainer, FlatToast } from "svelte-toasts";
 
-  console.log("color list: ", colors);
   $: colors = addColor($color);
+  console.log("color list:", colors);
 </script>
 
 <section class="colors">
