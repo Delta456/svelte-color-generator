@@ -12,14 +12,15 @@ export function addColor(color) {
 }
 
 export async function saveToClipboard(hex) {
-  if (navigator.clipboard) {
-    try {
-      await navigator.clipboard.writeText(`${hex}`);
-      toasts.success("Color copied to clipboard!");
-    } catch (error) {
-      toasts.error("Failed to copy color to clipboard");
-    }
-  } else {
+  if (!navigator.clipboard) {
     toasts.error("Clipboard access not available");
+    return;
+  }
+
+  try {
+    await navigator.clipboard.writeText(`${hex}`);
+    toasts.success("Color copied to clipboard!");
+  } catch (error) {
+    toasts.error("Failed to copy color to clipboard");
   }
 }
