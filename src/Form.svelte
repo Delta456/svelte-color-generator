@@ -6,6 +6,7 @@
   }
 </script>
 
+
 <section class="container" style="--color: {$color};">
   <h3>Color Generator</h3>
   <form class="color-form" on:submit|preventDefault={handleSubmit}>
@@ -13,6 +14,7 @@
     <input type="text" bind:value={$color} placeholder={DEFAULT_COLOR} />
   </form>
 </section>
+
 
 <style>
   input[type="color"] {

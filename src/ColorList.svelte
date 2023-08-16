@@ -7,6 +7,7 @@
   console.log("color list:", colors);
 </script>
 
+
 <section class="colors">
   {#each colors as c, index}
     <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
@@ -26,6 +27,7 @@
 <ToastContainer placement="top-center" let:data={data}>
   <FlatToast {data} />
 </ToastContainer>
+
 
 <style>
   .colors {
